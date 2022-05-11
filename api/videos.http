@@ -1,0 +1,30 @@
+@Api = http://localhost:5000
+
+### Obteniendo todos los videos
+GET {{Api}}/videos
+
+### Obtengo un video por id
+GET {{Api}}/videos/62758d26070bbb516b35b28a
+
+### Creando video
+POST {{Api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.youtube.com/watch?v=wOLo-B7mrZM",
+    "title":"MERN STACK & Typescript (Mongodb, Express, React, Node con Typescript) - #2",
+    "description":"Tutorial de front end con node"
+}
+
+
+### Eliminar por id
+DELETE {{Api}}/videos/62758d26070bbb516b35b28a
+
+### Actualiza un video por id
+PUT {{Api}}/videos/62759606d9f982e9699b71c4
+Content-Type: application/json
+
+{
+    "title":"MERN STACK & Typescript"
+}
+
